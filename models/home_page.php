@@ -114,9 +114,6 @@ require_once("../db/db.php");
                     <h4><?= $sa[1]; ?></h4>
                     <h5>Автор: <?= $sa[2]; ?></h5>
                     <p><?= $sa[4]; ?></p>
-                    <?php 
-
-                    ?>
                     <a href="./moreinfo/more.php?id=<?= $sa[0]; ?>">Подробнее</a>
                 </div>
             </div>

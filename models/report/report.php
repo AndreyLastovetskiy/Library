@@ -54,9 +54,10 @@ $iduser = $_GET['id'];
             foreach($select_booksread as $sbr) { 
             $sbrid = $sbr[1];
             $select_books = mysqli_query($link, "SELECT * FROM `book` WHERE `id` = '$sbrid'");
-            $select_books = mysqli_fetch_assoc($select_books)    
+            $select_books = mysqli_fetch_assoc($select_books); 
             ?>
                 <a href="../moreinfo/more.php?id=<?= $sbr[1] ?>"><?= $select_books['title'] ?></a>
+                <br>
             <?php } ?>
         </div>
     </div>
