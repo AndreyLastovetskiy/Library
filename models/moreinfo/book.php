@@ -3,9 +3,9 @@
 session_start();
 
 // если кука с idgroup, не равно 1, значит это читатель и ему нельзя на эту страницу, отпавляем на главную страницу
-if($_COOKIE['idgroup'] != 1) {
-    header("Location: ../home_page.php");
-}
+// if($_COOKIE['idgroup'] != 1) {
+//     header("Location: ../home_page.php");
+// }
 
 // если не существует куки id, значит пользователь не прошел авторизацию и мы его направляем на прохождение ее
 if(empty($_COOKIE['id'])) {

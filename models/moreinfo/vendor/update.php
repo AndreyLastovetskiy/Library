@@ -24,7 +24,7 @@ $year = $_POST['year'];
 $descrip = $_POST['descrip'];
 
 // записываем в переменную путь до фотографии книги
-$path = 'upload/books/' . time() . $_FILES['pathimg']['name'] . ".png";
+$path = 'upload/books/' . time() . $_FILES['pathimg']['name'];
 
 // переносим нашу фотографию книги в нужную папку
 move_uploaded_file($_FILES['pathimg']['tmp_name'], '../../../' . $path);

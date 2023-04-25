@@ -8,6 +8,12 @@
     display: flex;
     gap: 20px;
 }
+.bw-info {
+    width: 75%;
+}
+.bw-info h4 {
+    margin-top: 0;
+}
 .bw-image {
     width: 15%;
     height: 100%;
